@@ -1,0 +1,14 @@
+/* bug.css */
+.element {
+  width: calc(50% + 100px); /* Inconsistent units: % + px */
+}
+
+/* bugSolution.css */
+.element {
+  width: calc((50vw / 2) + 100px); /* Using vw for percentage and converting to pixels */
+}
+/* Or using only px:
+.element {
+  width: calc((50vw / 2) + 100px);
+  width: calc((50/100)*1000 + 100)px;  /* width is set to 600px assuming 1000px viewport */
+} */
