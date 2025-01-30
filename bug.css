@@ -1,0 +1,1 @@
+The CSS property `calc()` might lead to unexpected results if you try to perform calculations with units that aren't compatible. For example, attempting to add pixels and percentages directly may cause unexpected outcomes in different browsers or screen sizes.  This is because the browser might not be able to correctly interpret mixed units.
